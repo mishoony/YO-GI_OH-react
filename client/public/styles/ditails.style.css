@@ -1,0 +1,38 @@
+.product_conteiner{
+    max-width: 50vw;
+    margin: 10vw;
+    margin-left: 25vw;
+    border: 3px solid black;
+
+    background-image: url(./img/view-fullsize-yu-gi-oh-duel-monsters-image-yami-yugi-monster-strike-manga-comics-book-graphics-transparent-png-1199155.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.img_of_product{
+
+    max-width: 45%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+.name_of_product{
+    font-size: 1.7rem;
+    font-weight: bold;
+
+    padding: 5px;
+}
+
+.info_list li{
+    margin: 10px;
+}
+
+.price{
+    font-size: 20px;
+}
+
+.description{
+    max-width: 60%;
+}

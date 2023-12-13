@@ -1,0 +1,91 @@
+
+
+/* .mainSection{
+    display: flex;
+    align-items: center;
+} */
+
+.accaount{
+    border: 3px solid black;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    max-width:700px;
+    min-height: 1000px;
+    margin:50px auto ;
+    background-image: url(../image/view-fullsize-yu-gi-oh-duel-monsters-image-yami-yugi-monster-strike-manga-comics-book-graphics-transparent-png-1199155.png);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    bottom: 0;
+    gap: 5vw;
+    
+    
+}
+
+
+.accaount__form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: auto;
+    text-align: center;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    font-size: 27px;
+    color: #fe7e03;
+    gap: 30px;
+}
+
+/* .accaount__form input , .accaount__form label{
+
+    margin: 5px;
+    padding: 5px;
+} */
+
+
+
+.accaount__form input{
+    background-color: grey;
+
+    margin: 5px;
+}
+
+.accaount__form input:last-child{
+    margin-bottom: 40px;
+}
+
+.submit_btn{
+
+    font-size: 23px;
+    margin-top: 79px;
+    padding: 0.5rem;
+    min-width: 276px;
+    background-color: unset;
+    color: #fe7e03;
+}
+
+.accaount h2{
+
+    font-size: 50px;
+    text-align: center;
+    /* margin-top: 50px; */
+    margin-bottom: 9vw;
+    color: #fe7e03;
+}
+
+
+
+.card__form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 76px;
+    text-align: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    font-size: 20px;
+    color: white;
+}
