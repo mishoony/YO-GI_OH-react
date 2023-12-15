@@ -27,9 +27,10 @@ export default function Header() {
             </div>
             <div className="mainSection__navigation">
                 <ul className="mainSection__navigation__link">
-                    <Link className="mainSection__navigation__links" to='/'>home</Link>
+                    <Link to='/' className="mainSection__navigation__links" >home</Link>
                     <Link to='/gallery' className="mainSection__navigation__links">products</Link>
-                    <li className="mainSection__navigation__links">about as</li>
+                    <Link to='/aboutAs' className="mainSection__navigation__links">about as</Link>
+                    <Link to='/products/create' className="mainSection__navigation__links"> Create Product</Link>
                     <i className="fas fa-shopping-basket car marginNav"></i>
                 </ul>
             </div>
