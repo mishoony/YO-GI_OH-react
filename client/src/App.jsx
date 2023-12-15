@@ -8,6 +8,7 @@ import Home from "./components/Home/Home"
 import Login from "./components/Login/login"
 import Register from "./components/Register/Register"
 import Gallery from "./components/Gallery/Gallery"
+import CreateProduct from './components/Create_product/Create'
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
         <Route path='/login' element={<Login />} />
 
         <Route path='/register' element={<Register />} />
+
+        <Route path='/products/create' element={<CreateProduct />} />
 
       </Routes>
       <Footer />
