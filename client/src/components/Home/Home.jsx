@@ -18,8 +18,9 @@ export default function Home(){
 
                 setNewProduct(newProductResult)
                 setupComingProduct(upComingProductResult)
+                
             })
-    })
+    },[])
 
 
     return(

@@ -11,7 +11,7 @@ export default function Gallery() {
     useEffect(() => {
         productService.getAll()
             .then(result => setProduct(result))
-    })
+    },[])
 
     return (
         <main className="mainSection">

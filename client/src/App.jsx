@@ -9,28 +9,47 @@ import Login from "./components/Login/login"
 import Register from "./components/Register/Register"
 import Gallery from "./components/Gallery/Gallery"
 import CreateProduct from './components/Create_product/Create'
+import { AuthProvaider } from './context/authContext'
+import Logout from './components/Logout/logout'
+import Ditails from './components/Ditails/Ditails'
+import EditProduct from './components/Edit_product/Edit'
+import AuthGuard from './components/Guards/AuthGuard'
+import ErrorBoundary from './ErrorsBoundery/ErrorsBoundery'
 
 
 function App() {
 
 
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path='/' element={<Home />} />
+    
+      <ErrorBoundary>
+        <AuthProvaider>
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />} />
 
-        <Route path='/gallery' element={<Gallery />} />
+            <Route path='/gallery' element={<Gallery />} />
 
-        <Route path='/login' element={<Login />} />
+            <Route path='/product/:productId' element={<Ditails />} />
 
-        <Route path='/register' element={<Register />} />
+            <Route path='/login' element={<Login />} />
 
-        <Route path='/products/create' element={<CreateProduct />} />
+            <Route path='/register' element={<Register />} />
 
-      </Routes>
-      <Footer />
-    </>
+            <Route element={<AuthGuard />}>
+              <Route path='/products/create' element={<CreateProduct />} />
+
+              <Route path='/product/:productId/edit' element={<EditProduct />} />
+
+              <Route path='/logout' element={<Logout />} />
+
+            </Route>
+
+          </Routes>
+          <Footer />
+        </AuthProvaider>
+      </ErrorBoundary>
+    
 
   )
 }

@@ -16,24 +16,24 @@ export default function CreateProduct() {
     }
 
     return (
-        <main class="mainSection">
+        <main className="mainSection">
             <div className="accaount">
                 <h2>Create Product</h2>
                 <form className="card__form" onSubmit={createProductSubmitHandler} action="">
-                    <label for="nameProduct">Name of product</label>
+                    <label htmlFor="nameProduct">Name of product</label>
                     <input type="text" id="nameProduct" name='productName' />
 
-                    <label for="productDescription">Product Description</label>
+                    <label htmlFor="productDescription">Product Description</label>
                     <textarea name="description" id="productDescription" cols="25" rows="5"></textarea>
 
-                    <label for="price">Price of product</label>
+                    <label htmlFor="price">Price of product</label>
                     <input type="text" id="price" name='priceOfProduct' />
 
-                    <label for="imgUrl">Img File</label>
+                    <label htmlFor="imgUrl">Img File</label>
                     <input type="text" id="imgUrl" name='imgUrl' />
                     {/* <input type="file" id="imgUrl" accept="image/*" /> */}
 
-                    <label for="typeOfProduct">Type of Product</label>
+                    <label htmlFor="typeOfProduct">Type of Product</label>
                     <select name="typeOfProduct" id="typeOfProduct">
                         <option value="map">Map</option>
                         <option value="card">Card</option>
@@ -42,7 +42,7 @@ export default function CreateProduct() {
 
 
 
-                    <label for="typeOfPost">Type of Post</label>
+                    <label htmlFor="typeOfPost">Type of Post</label>
                     <select name="typeOfPost" id="typeOfPost">
                         <option value="Upcoming">Upcoming</option>
                         <option value="ForSeal">For seal</option>
